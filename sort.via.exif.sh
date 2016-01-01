@@ -1,8 +1,9 @@
 
 
-# For anything left over, use the Modficaiton Date. Include MOVs in this
-# round. They didn't have the Original Date when I was testing. 
-for FILE in `find -type f | egrep "(png$|jpg$|mov$|JPG$|PNG$|MOV$)"`; 
+# Create a for loop using 
+# find - That only does ONE LEVEL (as to not look at already sorted files)
+# grep - Look for specific types of files
+for FILE in `find -maxdepth 1 -type f | egrep "(png$|jpg$|mov$|mp4$|JPG$|PNG$|MOV$|MP4$)"`; 
 do 
 
 	echo $FILE
@@ -18,7 +19,10 @@ do
 	# move file to that folder but only if there is data
 	# to provide a year/month folder option
 	if [ -n "$YEAR" ]; then
-		mv $FILE $FOLDER
+		mv $FILE $FOLDER 2>/dev/null
+		if [ $? -ne 0 ]; then
+		    echo "$FILE move failed"
+		fi
 	fi
 
 done;
