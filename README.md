@@ -10,11 +10,12 @@ chmod +x sort.via.exif.sh
 ./sort.via.exif.sh
 ```
 
-Let this run you should be left with a folder structure of ./{Year} and ./{Year}/{Month}. Copy this to any place. 
+After the run, you'll be left with a folder structure of ./{Year} and ./{Year}/{Month}. Copy this to any place where you store memories. 
 
 Requires
 -
-Exiftool which may be installed via `# apt install libimage-exiftool-perl`.
+- Exiftool which may be installed via `# apt install libimage-exiftool-perl`.
+- A little CLI know how
 
 
 Errata
