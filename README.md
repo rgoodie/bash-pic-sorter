@@ -1,5 +1,5 @@
 # bash-pic-sorter
-Series of bash scripts to sort photos or files into a /YEAR/MONTH/ file tree
+Series of bash scripts to sort photos or files into a /YEAR/MONTH/ file tree. There really is nothing magical about this file. It's executes a `for` loop, infers year and month from Exif information, and moves the file to that folder named for that year and month. It leaves you with folder sorted items, that you can move into your family's master file store. 
 
 # To use
 Copy this file a folder containing unsorted photos and run in the context of that folder
