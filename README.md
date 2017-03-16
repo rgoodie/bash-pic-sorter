@@ -17,3 +17,6 @@ Requires
 Exiftool which may be installed via `# apt install libimage-exiftool-perl`.
 
 
+Errata
+-
+No warrenties given. As always, have back ups of your media and precious memories. Use at your own risk. Explore code to understand what's happening before blind use. Report back any errors, mistakes, or suggestions to [Issues](https://github.com/rgoodie/bash-pic-sorter/issues). 
